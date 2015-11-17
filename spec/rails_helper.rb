@@ -11,6 +11,7 @@ require 'capybara/poltergeist'
 ActiveRecord::Migration.maintain_test_schema!
 
 Capybara.register_driver :poltergeist do |app|
+  puts "#{self.class}.#{__method__}"
   Capybara::Poltergeist::Driver.new(app, {debug: true})
 end
 Capybara.default_driver = :poltergeist
