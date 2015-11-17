@@ -11,7 +11,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 
 group :development, :test do
-  gem 'poltergeist'
+  gem 'poltergeist', github: "nbrookie/poltergeist", branch: "debugging"
   gem 'capybara'
   gem 'rspec-rails'
   gem 'byebug'
